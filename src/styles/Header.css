@@ -1,0 +1,32 @@
+.header {
+    background-color: #282c34;
+    color: white;
+    padding: 20px 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 1200px;
+}
+.logo{
+    margin-right: auto;
+    gap: 20px;
+}
+.nav-links {
+    display: flex;
+    gap: 20px;
+}
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+}
+.nav-links a:hover {
+    text-decoration: underline;
+}

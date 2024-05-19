@@ -1,15 +1,18 @@
 import React from "react";
+import '../styles/Header.css';
 
 function Header() {
     return (
         <header className="header">
-            <h1>BetanCore LLC</h1>
-            <nav>
-                <a href="#">Home</a>
-                <a href="#">About Us</a>
-                <a href="#">Services</a>
-                <a href="#">Contact</a>
-            </nav>
+            <div className="nav-container">
+                <h1 className="logo">BetanCore LLC</h1>
+                <nav className="nav-links">
+                    <a href="#home">Home</a>
+                    <a href="#about">About Us</a>
+                    <a href="#services">Services</a>
+                    <a href="#contact">Contact</a>
+                </nav>
+            </div>
         </header>
     );
 }
