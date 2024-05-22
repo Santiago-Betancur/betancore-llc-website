@@ -3,3 +3,43 @@
     margin: 0;
     padding: 0;
 }
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    background-color: black;
+    min-width: 320px;
+    /* Example minimum width */
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Roboto', sans-serif;
+}
+:root {
+    --color-primary: #EDAE49;
+    --color-secondary: #D1495B;
+    --color-tertiary: #00798C;
+    --color-quaternary: #30638E;
+    --color-dark: #003D5B;
+
+    --font-size-base: 16px;  /* Base font size for larger screens */
+    --font-size-large: 20px; /* Larger font size for headings */
+    --font-size-small: 14px; /* Smaller font size for subtext */
+
+    --font-size-base-mobile: 14px;  /* Base font size for mobile screens */
+    --font-size-large-mobile: 18px; /* Larger font size for headings on mobile */
+    --font-size-small-mobile: 12px; /* Smaller font size for subtext on mobile */
+}
+
+@media (max-width: 768px) {
+    :root {
+        --font-size-base: var(--font-size-base-mobile);
+        --font-size-large: var(--font-size-large-mobile);
+        --font-size-small: var(--font-size-small-mobile);
+    }
+}
+
