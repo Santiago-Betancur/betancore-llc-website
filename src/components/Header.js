@@ -1,4 +1,6 @@
+// src/components/Header.js
 import React, { useState } from "react";
+import { Link } from 'react-router-dom';
 import '../styles/Header.css';
 
 function Header() {
@@ -15,10 +17,10 @@ function Header() {
                     {menuOpen ? '✖' : '☰'}
                 </button>
                 <nav className={`nav-links ${menuOpen ? 'open' : ''}`}>
-                    <a href="#home">Home</a>
-                    <a href="#about">About Us</a>
-                    <a href="#services">Services</a>
-                    <a href="#contact">Contact</a>
+                    <Link to="/" onClick={toggleMenu}>Home</Link>
+                    <Link to="/about" onClick={toggleMenu}>About Us</Link>
+                    <Link to="/services" onClick={toggleMenu}>Services</Link>
+                    <Link to="/contact" onClick={toggleMenu}>Contact</Link>
                 </nav>
             </div>
         </header>

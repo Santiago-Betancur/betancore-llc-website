@@ -1,0 +1,19 @@
+/* src/styles/Contact.css */
+
+.contact-form {
+    padding: 20px;
+    margin: 20px;
+    background-color: var(--color-quaternary);
+    color: var(--color-primary);
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.contact-form h2 {
+    margin-bottom: 20px;
+    font-size: var(--font-size-large);
+}
+
+.contact-form p {
+    font-size: var(--font-size-base);
+}

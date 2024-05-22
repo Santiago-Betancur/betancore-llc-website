@@ -27,11 +27,11 @@ h6 {
     --color-dark: #003D5B;
 
     --font-size-base: 16px;  /* Base font size for larger screens */
-    --font-size-large: 20px; /* Larger font size for headings */
+    --font-size-large: 24px; /* Larger font size for headings */
     --font-size-small: 14px; /* Smaller font size for subtext */
 
     --font-size-base-mobile: 14px;  /* Base font size for mobile screens */
-    --font-size-large-mobile: 18px; /* Larger font size for headings on mobile */
+    --font-size-large-mobile: 20px; /* Larger font size for headings on mobile */
     --font-size-small-mobile: 12px; /* Smaller font size for subtext on mobile */
 }
 

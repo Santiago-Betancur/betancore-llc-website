@@ -24,7 +24,7 @@
 .nav-links {
     display: flex;
     gap: 20px;
-    font-size: var(--font-size-base);
+    font-size: var(--font-size-small);
     color: var(--color-primary);
 }
 
@@ -32,10 +32,14 @@
     color: var(--color-primary);
     text-decoration: none;
     font-weight: 500;
+    border-left: 1px var(--color-primary) solid;
+    padding-left: 10px;
+    text-transform: uppercase;
 }
 
 .nav-links a:hover {
     color: var(--color-secondary);
+    border-left: 1px var(--color-secondary) solid;
 }
 
 /* Mobile Styles */
