@@ -35,6 +35,26 @@ h6 {
     --font-size-small-mobile: 12px; /* Smaller font size for subtext on mobile */
 }
 
+/* Adjust Overall Layout */
+
+.App {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header {
+    flex-shrink: 0;
+}
+
+main {
+    flex-grow: 1;
+}
+
+footer {
+    flex-shrink: 0;
+}
+
 @media (max-width: 768px) {
     :root {
         --font-size-base: var(--font-size-base-mobile);

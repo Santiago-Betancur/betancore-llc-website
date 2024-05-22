@@ -1,0 +1,42 @@
+/* src/styles/Footer.css */
+
+.footer {
+    background-color: var(--color-dark);
+    color: var(--color-primary);
+    padding: 20px 0;
+    display: flex;
+    justify-content: space-between; /* Space between legal info and button */
+    align-items: center;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.legal-info {
+    font-size: var(--font-size-small);
+}
+
+.contact-button button {
+    background-color: var(--color-primary);
+    color: var(--color-dark);
+    border: none;
+    padding: 10px 20px;
+    font-size: var(--font-size-base);
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.contact-button button:hover {
+    background-color: var(--color-secondary);
+    color: var(--color-primary);
+}
