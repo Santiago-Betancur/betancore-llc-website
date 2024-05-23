@@ -3,7 +3,7 @@
 
 .home {
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
     height: calc(100vh - 60px); /* Adjust the height to exclude header and footer height */
     perspective: 1000px; /* Add perspective for 3D effect */
@@ -18,7 +18,7 @@
     transform: rotateX(0deg) rotateY(0deg); /* Face directly to the viewer */
     background: #f0f0f0; /* Lighter background color */
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
     align-items: center;
     overflow: hidden; /* Hide outer faces */
     box-shadow: 0 0 50px rgba(0, 0, 0, 0.5); /* Slight shadow to give depth */
@@ -58,6 +58,21 @@
     z-index: 10; /* Ensure the message is on top */
 }
 
+.contact-button button {
+    background-color: var(--color-primary);
+    color: var(--color-dark);
+    border: none;
+    padding: 10px 20px;
+    font-size: var(--font-size-base);
+    cursor: pointer;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+
+.contact-button button:hover {
+    background-color: var(--color-secondary);
+    color: var(--color-primary);
+}
 /* Adding a completely smooth light reflection effect */
 @keyframes lightReflection {
     0% {
@@ -80,4 +95,18 @@
     animation: lightReflection 12s infinite ease-in-out; /* Very smooth and slow transition */
     pointer-events: none;
     z-index: 1;
+}
+@media (max-width: 768px) {
+    .cube {justify-content: center;}
+   
+
+    .core-sphere {
+        width: 200px;
+        height: 200px;
+    }
+
+    .message {
+        font-size: calc(var(--font-size-base));
+        width: 100%;
+    }
 }

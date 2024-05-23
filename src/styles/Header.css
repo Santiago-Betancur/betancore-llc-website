@@ -50,7 +50,6 @@
     color: var(--color-primary);
     cursor: pointer;
 }
-
 /* Responisve Styles */
 @media (max-width: 768px) {
     .logo {
@@ -65,14 +64,27 @@
         right: 0;
         background-color: var(--color-dark);
         width: 300px;
-        
-        padding: 10px;
+        padding: 20px; /* Increase padding for easier tap */
         border-radius: 5px;
         opacity: 0; /* Start hidden */
         transform: translateX(100%); /* Start off-screen */
         transition: all 0.3s ease-in-out; /* Smooth transition */
         z-index: 10;
     }
+    
+    .nav-links a {
+        padding: 15px 10px; /* Increase padding for links */
+        font-size: 18px; /* Increase font size for readability */
+        color: var(--color-light); /* Example text color */
+        text-decoration: none; /* Remove underline */
+        border-radius: 5px; /* Optional: rounded corners */
+    }
+    
+    .nav-links a:hover {
+        background-color: var(--color-light); /* Change background on hover for feedback */
+        color: var(--color-dark); /* Example text color on hover */
+    }
+    
     .nav-links.open {
         display: flex;
         transform: translateX(0);

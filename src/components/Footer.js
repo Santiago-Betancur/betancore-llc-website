@@ -8,9 +8,6 @@ function Footer() {
                 <div className="legal-info">
                     <p>&copy; 2024 BetanCore LLC. All rights reserved.</p>
                 </div>
-                <div className="contact-button">
-                    <button onClick={() => window.location.href='#contact'}>Contact</button>
-                </div>
             </div>
         </footer>
     );
