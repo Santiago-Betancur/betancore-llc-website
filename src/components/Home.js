@@ -9,8 +9,8 @@ function Home() {
                 <div className="core-sphere"></div>
                 <p className="message">
 "Focused on the future, never wavering from our true purpose."</p>
-                <div className="contact-button">
-                    <button onClick={() => window.location.href='#contact'}>Contact</button>
+                <div className="learn-button">
+                    <button onClick={() => window.location.href='#contact'}>Learn More</button>
                 </div>
             </div>
             

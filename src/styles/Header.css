@@ -74,7 +74,7 @@
     
     .nav-links a {
         padding: 15px 10px; /* Increase padding for links */
-        font-size: 18px; /* Increase font size for readability */
+        font-size: var(--font-size-base); /* Increase font size for readability */
         color: var(--color-light); /* Example text color */
         text-decoration: none; /* Remove underline */
         border-radius: 5px; /* Optional: rounded corners */

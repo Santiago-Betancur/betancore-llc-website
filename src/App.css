@@ -4,12 +4,12 @@
     padding: 0;
 }
 :root {
-    --color-primary: #EDAE49;
-    --color-secondary: #D1495B;
-    --color-tertiary: #00798C;
+    --color-primary: #E9C46A;
+    --color-secondary: #E76F51;
+    --color-tertiary: #2A9D8F;
     --color-quaternary: #30638E;
-    --color-dark: #003D5B;
-    
+    --color-dark: #264653;
+    --color-background: #EFF1E3;
 
     --font-size-base: 16px;
     /* Base font size for larger screens */
@@ -18,7 +18,7 @@
     --font-size-small: 14px;
     /* Smaller font size for subtext */
 
-    --font-size-base-mobile: 14px;
+    --font-size-base-mobile: 15px;
     /* Base font size for mobile screens */
     --font-size-large-mobile: 20px;
     /* Larger font size for headings on mobile */

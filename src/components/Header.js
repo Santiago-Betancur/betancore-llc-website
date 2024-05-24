@@ -12,7 +12,7 @@ function Header() {
     return (
         <header className="header">
             <div className="nav-container">
-                <h1 className="logo">BetanCore LLC</h1>
+                <h1 className="logo">BetanCore</h1>
                 <button className="menu-toggle" onClick={toggleMenu}>
                     {menuOpen ? '✖' : '☰'}
                 </button>
