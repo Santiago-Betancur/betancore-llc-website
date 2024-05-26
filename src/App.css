@@ -10,7 +10,6 @@
     --color-quaternary: #30638E;
     --color-dark: #264653;
     --color-background: #EFF1E3;
-
     --font-size-base: 16px;
     /* Base font size for larger screens */
     --font-size-large: 24px;
@@ -28,7 +27,7 @@
 html,
 body {
     margin: 0;
-  padding: 0;
+    padding: 0;
     width: 100%;
     height: 100%;
     overflow-x: hidden;
@@ -41,7 +40,6 @@ body {
     
     font-family: 'Roboto', sans-serif;
 }
-
 h1,
 h2,
 h3,
@@ -50,17 +48,12 @@ h5,
 h6 {
     font-family: 'Roboto', sans-serif;
 }
-
-
-
 /* Adjust Overall Layout */
-
 .App {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
 }
-
 header {
     flex-shrink: 0;
 }
