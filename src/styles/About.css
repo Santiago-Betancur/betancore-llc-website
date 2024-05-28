@@ -57,6 +57,7 @@
         max-width: 768px;
         padding: 20px;
         overflow-y: scroll;
+        max-height: 500px;
     }
     .about-content p {
         font-size: var(--font-size-base-mobile);

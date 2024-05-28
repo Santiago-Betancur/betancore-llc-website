@@ -107,5 +107,6 @@
     .message {
         font-size: calc(var(--font-size-base));
         width: 100%;
+        padding: 20px;
     }
 }
