@@ -1,5 +1,5 @@
-// src/components/Home.js
 import React from "react";
+import { Link } from "react-router-dom";
 import "../styles/Home.css";
 
 function Home() {
@@ -11,7 +11,9 @@ function Home() {
           "Focused on the future, never wavering from our true purpose."
         </p>
         <div className="learn-button">
-          <button onClick={() => window.location.href = '#contact'}>Learn More</button>
+          <Link to="/about">
+            <button>Learn More</button>
+          </Link>
         </div>
       </div>
     </div>
