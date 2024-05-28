@@ -26,7 +26,7 @@ function About() {
             excellence, integrity, and collaborative success. 
           </p>
           {/* Call-to-Action Section */}
-          <div className="about-cta">
+          <div className="learn-button">
             <button onClick={() => (window.location.href = "#contact")}>
               Contact Us
             </button>

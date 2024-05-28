@@ -13,7 +13,7 @@
     height: 100%;
     transform-style: preserve-3d;
     transform: rotateX(0deg) rotateY(0deg); 
-    background: #faf3dd; 
+    background: #ffffff; 
     display: flex;
     justify-content: center;
     align-items: center;
@@ -59,13 +59,19 @@
     font-size: var(--font-size-base);
     cursor: pointer;
     border-radius: 5px;
-    margin-top: 20px;
+    margin-top: 50px;
 }
 
 .learn-button button:hover {
     background-color: var(--color-secondary);
-    color: var(--color-primary);
+    color: var(--color-dark);
 }
+
+.learn-button button:active {
+    transform: scale(0.95);
+    transition: transform 0.2s ease-in-out;
+}
+
 /* Adding a completely smooth light reflection effect */
 @keyframes lightReflection {
     0% {
