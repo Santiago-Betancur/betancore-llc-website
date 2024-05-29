@@ -1,16 +1,17 @@
 {
   "files": {
-    "main.css": "/betancore-llc-website/static/css/main.d7f817f8.css",
-    "main.js": "/betancore-llc-website/static/js/main.e6f34434.js",
+    "main.css": "/betancore-llc-website/static/css/main.07954045.css",
+    "main.js": "/betancore-llc-website/static/js/main.dcdf4aed.js",
     "static/js/453.916d2282.chunk.js": "/betancore-llc-website/static/js/453.916d2282.chunk.js",
+    "static/media/TopTekTempLogo.jpg": "/betancore-llc-website/static/media/TopTekTempLogo.23d0e8254c436f84ee39.jpg",
     "static/media/aboutUs-header-img.webp": "/betancore-llc-website/static/media/aboutUs-header-img.2cd1c4dfd660846e6aca.webp",
     "index.html": "/betancore-llc-website/index.html",
-    "main.d7f817f8.css.map": "/betancore-llc-website/static/css/main.d7f817f8.css.map",
-    "main.e6f34434.js.map": "/betancore-llc-website/static/js/main.e6f34434.js.map",
+    "main.07954045.css.map": "/betancore-llc-website/static/css/main.07954045.css.map",
+    "main.dcdf4aed.js.map": "/betancore-llc-website/static/js/main.dcdf4aed.js.map",
     "453.916d2282.chunk.js.map": "/betancore-llc-website/static/js/453.916d2282.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.d7f817f8.css",
-    "static/js/main.e6f34434.js"
+    "static/css/main.07954045.css",
+    "static/js/main.dcdf4aed.js"
   ]
 }
