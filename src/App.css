@@ -1,8 +1,10 @@
+/* src/App.css */
 * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
+
 :root {
     --color-primary: #E9C46A;
     --color-secondary: #E76F51;
@@ -11,21 +13,14 @@
     --color-dark: #264653;
     --color-background: #EFF1E3;
     --font-size-base: 16px;
-    /* Base font size for larger screens */
     --font-size-large: 24px;
-    /* Larger font size for headings */
     --font-size-small: 14px;
-    /* Smaller font size for subtext */
-
     --font-size-base-mobile: 15px;
-    /* Base font size for mobile screens */
     --font-size-large-mobile: 20px;
-    /* Larger font size for headings on mobile */
     --font-size-small-mobile: 12px;
-    /* Smaller font size for subtext on mobile */
 }
-html,
-body {
+
+html, body {
     margin: 0;
     padding: 0;
     width: 100%;
@@ -34,26 +29,23 @@ body {
     scroll-behavior: smooth;
     overflow: hidden;
 }
+
 body {
     color: var(--font-color);
-    
     font-family: 'Roboto', sans-serif;
 }
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
+
+h1, h2, h3, h4, h5, h6 {
     font-family: 'Roboto', sans-serif;
 }
-/* Adjust Overall Layout */
+
 .App {
     display: flex;
     flex-direction: column;
     height: 100vh;
     overflow: hidden;
 }
+
 header {
     position: sticky;
     top: 0;
@@ -70,31 +62,29 @@ footer {
     bottom: 0;
     z-index: 10;
 }
-/* Transition efffect between pages */
-/* src/App.css */
 
 .page {
     padding: 20px;
     background-color: #f0f0f0;
     border-radius: 10px;
     margin: 20px;
-  }
-  
-  .fade-enter {
+}
+
+.fade-enter {
     opacity: 0;
-  }
-  .fade-enter-active {
+}
+.fade-enter-active {
     opacity: 1;
     transition: opacity 300ms;
-  }
-  .fade-exit {
+}
+.fade-exit {
     opacity: 1;
-  }
-  .fade-exit-active {
+}
+.fade-exit-active {
     opacity: 0;
     transition: opacity 500ms;
-  }
-  
+}
+
 @media (max-width: 768px) {
     :root {
         --font-size-base: var(--font-size-base-mobile);
@@ -102,4 +92,3 @@ footer {
         --font-size-small: var(--font-size-small-mobile);
     }
 }
-
