@@ -14,25 +14,29 @@ function App() {
   const location = useLocation();
 
   return (
-    <TransitionGroup>
-      <CSSTransition key={location.key} classNames="fade" timeout={300}>
-        <Routes location={location}>
-          <Route path="/" element={<Home />} />
-          <Route path="/about" element={<About />} />
-          <Route path="/endeavours" element={<Endeavours />} />
-          <Route path="/contact" element={<Contact />} />
-        </Routes>
-      </CSSTransition>
-    </TransitionGroup>
+    <div className="app">
+      <Header />
+      <main className="content">
+        <TransitionGroup>
+          <CSSTransition key={location.key} classNames="fade" timeout={300}>
+            <Routes location={location}>
+              <Route path="/" element={<Home />} />
+              <Route path="/about" element={<About />} />
+              <Route path="/endeavours" element={<Endeavours />} />
+              <Route path="/contact" element={<Contact />} />
+            </Routes>
+          </CSSTransition>
+        </TransitionGroup>
+      </main>
+      <Footer />
+    </div>
   );
 }
 
 function AppWrapper() {
   return (
     <Router>
-      <Header />
       <App />
-      <Footer />
     </Router>
   );
 }

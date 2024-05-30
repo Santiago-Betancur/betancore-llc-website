@@ -65,8 +65,11 @@
 }
 
 @media (max-width: 768px) {
+  
   .endeavour {
     flex-direction: column;
+    max-height: calc(100vh - 60px);
+   
   }
   .endeavour-image {
     width: 200px;
@@ -75,4 +78,5 @@
   .endeavour-content {
     padding-top: 20px;
   }
+
 }
