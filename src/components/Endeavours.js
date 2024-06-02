@@ -10,6 +10,12 @@ const endeavours = [
     description: "TopTek is a leading technology solutions provider, specializing in innovative products and services that enhance business operations and improve everyday life. We generate revenue through affiliate marketing by promoting third-party products and earning commissions on sales.",
     link: "https://example.com/toptek"
   },
+  {
+    title: "TopTek",
+    image: require('../resourses/TopTekTempLogo.jpg'),
+    description: "TopTek is a leading technology solutions provider, specializing in innovative products and services that enhance business operations and improve everyday life. We generate revenue through affiliate marketing by promoting third-party products and earning commissions on sales.",
+    link: "https://example.com/toptek"
+  }
   // Add more endeavours as needed
 ];
 

@@ -1,29 +1,31 @@
 /* src/styles/Endeavours.css */
 .endeavours {
-  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   background-color: var(--color-background);
-  border-radius: 10px;
-  margin: 20px auto;
-  color: var(--color-dark);
-  max-width: 1000px;
-  display: block;
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+  height: 100vh; /* Ensure the container takes up the full viewport height */
+  overflow-y: auto; /* Allow vertical scrolling */
 }
 
 .endeavours-title {
   text-align: center;
-  margin-bottom: 40px;
+  margin-bottom: 20px;
   font-size: var(--font-size-large);
   color: var(--color-dark);
 }
-
 .endeavour {
   display: flex;
   align-items: center;
-  margin-bottom: 40px;
+  border-bottom: 1px solid var(--color-secondary);
+  padding-bottom: 20px;
+  margin-bottom: 20px;
 }
-
 .endeavour-image {
-  width: 300px;
+  width: 20%;
   padding: 20px;
 }
 
@@ -32,9 +34,8 @@
   border-radius: 10px;
 }
 
-
 .endeavour-content {
-  flex: 1;
+  flex: 2;
   padding: 20px;
 }
 
@@ -45,7 +46,6 @@
 
 .endeavour-content p {
   font-size: var(--font-size-base);
-  line-height: 1.5;
   margin-bottom: 20px;
 }
 
@@ -65,18 +65,33 @@
 }
 
 @media (max-width: 768px) {
-  
-  .endeavour {
-    flex-direction: column;
-    max-height: calc(100vh - 60px);
-   
-  }
-  .endeavour-image {
-    width: 200px;
-    order: -1;
-  }
-  .endeavour-content {
-    padding-top: 20px;
+  .endeavour-content h2 {
+    font-size: var(--font-size-medium);
   }
 
+  .endeavour-content p {
+    font-size: var(--font-size-base);
+    line-height: 1.5;
+  }
+  .endeavour {
+    flex-direction: column-reverse;
+  }
+
+  .endeavour-content {
+    padding-top: 0;
+    position: relative;
+    
+  }
+
+  .endeavour-image {
+    order: 1;
+    width: 100px;
+    margin-bottom: 10px;
+    position: relative;
+  }
+  .endeavours {
+    padding-bottom: 200px;
+    margin-bottom: -200px;
+  }
 }
+

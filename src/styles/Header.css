@@ -24,7 +24,7 @@
   .nav-links {
     display: flex;
     gap: 20px;
-    font-size: var(--font-size-small);
+    font-size: calc(var(--font-size-small) * 0.9);
     color: var(--color-primary);
   }
   
@@ -58,7 +58,7 @@
   
   @media (max-width: 768px) {
     .logo {
-      font-size: var(--font-size-large);
+      font-size: calc(var(--font-size-large) * 1.2);
     }
     
     .nav-links {

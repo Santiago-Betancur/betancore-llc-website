@@ -15,16 +15,13 @@
     --font-size-base: 16px;
     --font-size-large: 24px;
     --font-size-small: 14px;
-    --font-size-base-mobile: 15px;
-    --font-size-large-mobile: 20px;
-    --font-size-small-mobile: 12px;
 }
 
 html, body {
     margin: 0;
     padding: 0;
     width: 100%;
-    height: 100vh;
+    height: 100%; /* Updated to ensure full viewport height */
     touch-action: manipulation;
     scroll-behavior: smooth;
     overflow: hidden;
@@ -33,6 +30,8 @@ html, body {
 body {
     color: var(--font-color);
     font-family: 'Roboto', sans-serif;
+    display: flex; /* Added to use Flexbox layout */
+    flex-direction: column; /* Added to use Flexbox layout */
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -42,25 +41,13 @@ h1, h2, h3, h4, h5, h6 {
 .App {
     display: flex;
     flex-direction: column;
-    height: 100vh;
-    overflow: hidden;
-}
-
-header {
-    position: sticky;
-    top: 0;
-    z-index: 10;
+    flex-grow: 1; /* Updated to ensure App component takes available space */
 }
 
 main {
-    flex-grow: 1;
-    overflow: auto;
-}
-
-footer {
-    position: sticky;
-    bottom: 0;
-    z-index: 10;
+    flex-grow: 1; /* Updated to ensure main takes available space */
+    display: flex; /* Added to use Flexbox layout */
+    flex-direction: column; /* Added to use Flexbox layout */
 }
 
 .page {
@@ -87,8 +74,12 @@ footer {
 
 @media (max-width: 768px) {
     :root {
-        --font-size-base: var(--font-size-base-mobile);
-        --font-size-large: var(--font-size-large-mobile);
-        --font-size-small: var(--font-size-small-mobile);
+        --font-size-base: 15px;
+        --font-size-large: 20px;
+        --font-size-small: 12px;
+    }
+    html, body {
+        overflow: hidden; /* Ensures no overflow on mobile */
+        position: fixed; /* Ensures no scroll on mobile */
     }
 }
